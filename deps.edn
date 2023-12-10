@@ -1,0 +1,26 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure               {:mvn/version "1.11.1"}
+        ;; HTTP server.
+        ;; https://github.com/ring-clojure/ring/tree/1.9.6
+        ring/ring-core                    {:mvn/version "1.9.6"}
+        ring/ring-jetty-adapter           {:mvn/version "1.9.6"}
+        ;; Routing library that integrates with ring.
+        metosin/reitit                    {:mvn/version "0.6.0"}
+        ;; Library for dealing with JSONs
+        cheshire/cheshire                 {:mvn/version "5.11.0"}
+        org.clj-commons/byte-streams      {:mvn/version "0.3.2"}
+        ;; Third-party library for dealing with SQL and Postgre.
+        ;; Not sure we need it since we have `next.jdbc`.
+        ;; https://github.com/remodoy/clj-postgresql
+        clj-postgresql/clj-postgresql     {:mvn/version "0.7.0"}
+        org.postgresql/postgresql         {:mvn/version "42.5.4"}
+        ;; Third-party for dealing with JDBC.
+        ;; https://github.com/seancorfield/next-jdbc
+        com.github.seancorfield/next.jdbc {:mvn/version "1.3.847"}
+        ;; Library for running SQL migrations.
+        migratus/migratus                 {:mvn/version "1.4.9"}
+        ;; Hidden dependency of Migratus.
+        ;; Library used for logging.
+        com.taoensso/timbre               {:mvn/version "6.1.0"}
+        com.fzakaria/slf4j-timbre         {:mvn/version "0.3.21"}
+        hiccup/hiccup {:mvn/version "2.0.0-RC2"}}}

@@ -1,0 +1,14 @@
+:root {
+    --page-width: min(90%, 800px);
+    scroll-behaviour: smooth;
+}
+
+html {
+    font-family: "Helvetica";
+}
+
+.page-centered {
+    width: var(--page-width);
+    margin-left: auto;
+    margin-right: auto;
+}
